@@ -1,0 +1,20 @@
+GEM DASH — PLAY GUIDE (PROTOTYPE)
+
+STATUS
+This ZIP contains the current playable browser prototype from the Gem Dash project. It is still based on the starter maze game; the custom gem-race objective and shared online leaderboard are not yet integrated. Scores in this prototype are local to the browser.
+
+HOW TO PLAY
+1. Open index.html through a local web server (instructions below). WASM browser exports may not run correctly if opened directly as a file.
+2. Choose Start Game.
+3. Move with WASD or the arrow keys. On touch devices, use the on-screen direction pad.
+4. Collect the glowing energy nodes and power-ups, avoid the sentinels, and clear both maze stages.
+5. Press Esc to pause/resume. Use the on-screen buttons to restart or return to the title screen.
+6. On the results screen, enter a display name and submit to save a local result; open Leaderboard to see local standings.
+
+RUN THE ZIP
+Extract the ZIP, open a terminal in the extracted folder, and run one of:
+  python3 -m http.server 8000
+  npx serve .
+Then open http://localhost:8000 in a modern browser.
+
+For a workshop release, the intended next build will replace the starter objective with the Gem Dash gem-collection race and connect the shared online leaderboard. The enabled project backend still needs its API, board migration, and hybrid deployment wiring before that shared leaderboard can be used.
